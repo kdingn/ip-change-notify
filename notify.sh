@@ -11,7 +11,7 @@ url=$(cat ./token.txt)
 
 # notifyer
 notify(){
-  curl -H "Content-Type: application/json" -X POST -d '{"username": "minecraftBot", "content":"'"$1"'"}' "$2"
+  curl -H "Content-Type: application/json" -X POST -d '{"username": "ipBot", "content":"'"$1"'"}' "$2"
 }
 
 # 一定間隔で実行
