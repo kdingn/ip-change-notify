@@ -11,7 +11,6 @@ url=$(cat ./token.txt)
 
 # notifyer
 notify(){
-  echo $2
   curl -H "Content-Type: application/json" -X POST -d '{"username": "minecraftBot", "content":"'"$1"'"}' "$2"
 }
 
