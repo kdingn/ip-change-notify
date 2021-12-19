@@ -1,0 +1,31 @@
+# 利用方法
+## 概要
+本スクリプトは，bash のみを利用して，
+IPアドレスを監視し変更時にディスコードへ通知するものです．
+
+## 準備
+1. token.txt の作成
+```
+echo [webhook url] > token.txt
+```
+2. globalip.txt の作成
+```
+echo [現在のIPアドレス(実はテキトーでも動く)] > token.txt
+```
+3. 監視の実行間隔はデフォルトで300[sec]<br>
+notify.sh 内の span で管理しています．
+
+
+## 実行
+1. 上記設定項目を更新．
+
+2. notify.sh に実行権限を与える．
+（例）notify.sh のあるディレクトリで下記コマンドを実行．
+```sh
+chmod a+x notify.sh
+```
+
+3. notify.sh のあるディレクトリで下記コマンドを実行．
+```sh
+bash notify.sh
+```
